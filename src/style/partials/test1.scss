@@ -1,0 +1,98 @@
+$resolution: 827;
+
+#test1{
+  width: vw(827);
+  height: vw(650);
+  box-sizing: border-box;
+  padding: vw(45) 0 0;
+  .btn{
+    width: vw(323);
+    height: vw(64);
+    font-size: vw(20);
+  }
+  .lie,.true{
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: $font2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: vw(30);
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  button.lie,button.true{
+    transition: 0.3s ease;
+    &:hover{
+      background-size: 80% 80%;
+    }
+  }
+  .lie{
+    width: vw(352.87);
+    height: vw(212.14);
+    background: url("../img/lie.png") center center no-repeat;
+    background-size: 100% 100%;
+  }
+  .true{
+    width: vw(288.04);
+    height: vw(211.18);
+    background: url("../img/true.png") center center no-repeat;
+    background-size: 100% 100%;
+  }
+  .vopros-block{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 vw(45);
+    margin-top: vw(30);
+    .vopros{
+      font-family: $font2;
+      font-style: normal;
+      font-weight: bold;
+      font-size: vw(20);
+      line-height: vw(27);
+      text-align: center;
+      color: #000000;
+    }
+    .btns-row{
+      margin-top: vw(35);
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .otvet-block{
+    margin-top: vw(35);
+    .img-block{
+      display: flex;
+      justify-content: center;
+      >div{
+        display: none;
+        &.active{
+          display: flex;
+        }
+      }
+    }
+    .otvet{
+      margin-top: vw(34);
+      box-sizing: border-box;
+      padding: 0 vw(8);
+      font-family: $font1;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 38px;
+      color: #000000;
+      span{
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+    .btn{
+      margin-top: vw(25);
+    }
+  }
+
+}
