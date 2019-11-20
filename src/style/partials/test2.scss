@@ -1,0 +1,68 @@
+$resolution: 900;
+
+#test2{
+  width: vw(900);
+  height: vw(500);
+  box-sizing: border-box;
+  padding: vw(35) vw(45) 0;
+  .btn{
+    width: vw(323);
+    height: vw(64);
+    font-size: vw(20);
+  }
+
+  .vopros-block{
+    margin-top: vw(40);
+    .vopros{
+      font-family: $font2;
+      font-style: normal;
+      font-weight: bold;
+      font-size: vw(20);
+      line-height: vw(27);
+      text-align: center;
+      color: #000000;
+    }
+    .value{
+      font-family: $font1;
+      font-style: normal;
+      font-weight: bold;
+      font-size: vw(20);
+      text-align: center;
+      color: #000000;
+      margin-top: vw(25);
+    }
+    .ansver{
+      font-family: $font1;
+      font-style: normal;
+      font-weight: bold;
+      font-size: vw(20);
+      text-align: center;
+      margin-top: vw(6);
+      .yes{
+        color: green;
+      }
+      .no{
+        color: #DC0021;
+      }
+      >div{
+        display: none;
+        &.active{
+          display: block;
+        }
+      }
+    }
+    .ansver-text{
+      padding-top: vw(22);
+      background: url("../img/triagle.png") center top no-repeat;
+      background-size: vw(20) auto;
+      width: vw(300);
+      text-align: center;
+      font-family: $font1;
+      font-style: normal;
+      font-weight: bold;
+      font-size: vw(20);
+      line-height: vw(26);
+      color: #000000;
+    }
+  }
+}

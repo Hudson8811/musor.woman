@@ -28,7 +28,7 @@ body{
 			margin-left: 33px;
 		}
 		&.active{
-			background: rgba(0, 0, 0, 0.5);
+			background: #000000;
 		}
 	}
 }
@@ -46,4 +46,7 @@ body{
 	text-align: center;
 	color: #FFFFFF;
 	margin: 0 auto;
+	&:hover{
+		background: #9e001f;
+	}
 }

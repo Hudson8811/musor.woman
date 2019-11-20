@@ -1,0 +1,41 @@
+$resolution: 1466;
+
+#test3{
+  width: vw(1466);
+  height: vw(847);
+  box-sizing: border-box;
+  padding: vw(22) vw(22) 0;
+  .btn{
+    width: vw(323);
+    height: vw(64);
+    font-size: vw(20);
+  }
+
+
+  .bins{
+    display: flex;
+    justify-content: space-between;
+    .bin{
+      width: vw(331);
+      height: vw(331);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &#bin-1{background-image: url("../img/plastic_bin.png")}
+      &#bin-2{background-image: url("../img/paper_bin.png")}
+      &#bin-3{background-image: url("../img/glass_bin.png")}
+      &#bin-4{background-image: url("../img/waste_bin.png")}
+      .circle{
+        width: vw(172);
+        height: vw(172);
+        display: block;
+        border-radius: 100%;
+        background: white;
+        box-sizing: border-box;
+      }
+    }
+  }
+}
