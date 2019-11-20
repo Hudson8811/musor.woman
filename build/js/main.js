@@ -90,7 +90,19 @@ $(function() {
     });
 
 });
+$(function() {
 
+    var handle = $( "#slider-value" );
+    $( "#slider" ).slider({
+        create: function() {
+            handle.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+            handle.text( ui.value );
+        }
+    });
+
+});
 $(function() {
 
     $.getJSON('test3.json', function(data) {
