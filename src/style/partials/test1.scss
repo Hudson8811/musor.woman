@@ -2,7 +2,7 @@ $resolution: 827;
 
 #test1{
   width: vw(827);
-  height: vw(650);
+  height: vw(820);
   box-sizing: border-box;
   padding: vw(45) 0 0;
   .btn{
@@ -11,7 +11,6 @@ $resolution: 827;
     font-size: vw(20);
   }
   .lie,.true{
-    cursor: pointer;
     border: none;
     margin: 0;
     padding: 0;
@@ -26,6 +25,7 @@ $resolution: 827;
   }
   button.lie,button.true{
     transition: 0.3s ease;
+    cursor: pointer;
     &:hover{
       background-size: 80% 80%;
     }
@@ -64,6 +64,7 @@ $resolution: 827;
   }
 
   .otvet-block{
+    display: none;
     margin-top: vw(35);
     .img-block{
       display: flex;

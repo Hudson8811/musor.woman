@@ -11,7 +11,9 @@ body{
 	font-size: 1vw;
 }
 
-
+*:focus{
+	outline: none;
+}
 
 .count-dots{
 	display: flex;
