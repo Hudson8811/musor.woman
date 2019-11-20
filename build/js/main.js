@@ -48,10 +48,10 @@ $(function() {
             var val = $(this).data('val');
             $('#test3 .vopros').hide();
             $('#test3 .ansver-block').css('display','flex');
-            if (cur3 === test3Count){
+            if (cur3 == test3Count){
                 $('#test3 .next-vopros').hide();
             }
-            if (val === type) {
+            if (val == type) {
                 $(this).addClass('yes');
                 $('#test3 .ansver .yes').addClass('active');
             } else {
@@ -60,10 +60,10 @@ $(function() {
                 $('#test3 .ansver .no').addClass('active');
             }
             var typ = '';
-            if (type === 1){typ = 'Это пластик';}
-            if (type === 2){typ = 'Это бумага';}
-            if (type === 3){typ = 'Это стекло';}
-            if (type === 4){typ = 'Это не перерабатывается';}
+            if (type == 1){typ = 'Это пластик';}
+            if (type == 2){typ = 'Это бумага';}
+            if (type == 3){typ = 'Это стекло';}
+            if (type == 4){typ = 'Это не перерабатывается';}
             $('#test3 .ansver-text').html(typ);
         },
     });
