@@ -59,6 +59,12 @@ $(function() {
                 $(this).addClass('no');
                 $('#test3 .ansver .no').addClass('active');
             }
+            var typ = '';
+            if (type === 1){typ = 'Это пластик';}
+            if (type === 2){typ = 'Это бумага';}
+            if (type === 3){typ = 'Это стекло';}
+            if (type === 4){typ = 'Это не перерабатывается';}
+            $('#test3 .ansver-text').html(typ);
         },
     });
 
