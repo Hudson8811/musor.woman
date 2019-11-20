@@ -19,7 +19,7 @@
 
 		<div class="vopros-block">
 			<div class="vopros">
-				<div class="img"><img src="img/item1.png" alt=""></div>
+				<div class="img" id="draggable"><img src="img/item1.png" alt=""></div>
 				<div class="label">Бутылка от шампуня</div>
 				<div class="info">Перетащи предмет в нужную корзину</div>
 			</div>
@@ -33,17 +33,28 @@
 			</div>
 
 			<div class="bins">
-				<div class="bin" id="bin-1">
-					<div class="circle"></div>
+				<div class="bin" id="bin-1" data-val="1">
+					<div class="circle">
+						<img src="img/plastic-icon.png" alt="">
+						<div class="label">Пластик</div>
+					</div>
 				</div>
-				<div class="bin hovered" id="bin-2">
-					<div class="circle"></div>
+				<div class="bin" id="bin-2" data-val="2">
+					<div class="circle">
+						<img src="img/paper-icon.png" alt="">
+						<div class="label">Бумага</div>
+					</div>
 				</div>
-				<div class="bin yes" id="bin-3">
-					<div class="circle"></div>
+				<div class="bin" id="bin-3" data-val="3">
+					<div class="circle">
+						<img src="img/glass-icon.png" alt="">
+						<div class="label">Стекло</div>
+					</div>
 				</div>
-				<div class="bin no" id="bin-4">
-					<div class="circle"></div>
+				<div class="bin" id="bin-4" data-val="4">
+					<div class="circle">
+						<div class="label">Не<br>перераба-<br>тывается</div>
+					</div>
 				</div>
 			</div>
 
@@ -51,7 +62,6 @@
 
 
 	</div>
-
 
 
 <script src="js/main.js"></script>
