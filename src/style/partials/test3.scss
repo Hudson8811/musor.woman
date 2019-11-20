@@ -5,6 +5,7 @@ $resolution: 1466;
   height: vw(847);
   box-sizing: border-box;
   padding: vw(22) vw(22) vw(29);
+  overflow: hidden;
   .btn{
     width: vw(323);
     height: vw(64);
@@ -54,10 +55,11 @@ $resolution: 1466;
   }
 
   .ansver-block{
-    display: flex;
+    display: none;
     flex-grow: 1;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     .ansver{
       font-family: $font1;
       font-style: normal;
