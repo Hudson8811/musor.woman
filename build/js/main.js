@@ -99,6 +99,14 @@ $(function() {
 
         cur2 = 1;
 
+        var i;
+        var dots = '';
+        for (i = 0; i < test2Count; i++) {
+            dots += '<div class="dot"></div>';
+        }
+        $('#test2 .count-dots').html(dots);
+        $('#test2 .count-dots .dot').eq(cur2-1).addClass('active');
+
         text = test2[0].text;
         min = parseInt(test2[0].min);
         max = parseInt(test2[0].max);
@@ -150,7 +158,7 @@ $(function() {
         if ( value >= correct*0.85  && value  <= correct*1.15 ){
             $('#test2 .ansver-text').html(yes);
             $('#test2 .ansver-text').css('left',$("#custom-handle")[0].style.left);
-
+            $('#test2 .ansver .yes').addClass('active');
         } else {
             $('#test2 .ansver-text').html(no);
 
@@ -167,12 +175,15 @@ $(function() {
 
             $('#test2 .ansver-text').css('left',left);
             $('#custom-handle-2').show();
+
+            $('#test2 .ansver .no').addClass('active');
         }
         $('#test2 .ansver-text').show();
     });
 
     $('#test2 .next-vopros').click(function () {
         cur2++;
+        $('#test2 .count-dots .dot').eq(cur2-1).addClass('active').siblings('.dot').removeClass('active');
         $(this).hide();
         $('#test2 .ansver-text').hide();
         $('#test2 .ansver-btn').css('display','flex')
