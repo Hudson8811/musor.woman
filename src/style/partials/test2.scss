@@ -57,6 +57,7 @@ $resolution: 900;
       background: url("../img/triagle.png") center top no-repeat;
       background-size: vw(20) auto;
       width: vw(300);
+      margin-left: vw(-150);
       text-align: center;
       font-family: $font1;
       font-style: normal;
@@ -64,10 +65,15 @@ $resolution: 900;
       font-size: vw(20);
       line-height: vw(26);
       color: #000000;
+      display: none;
+      position: relative;
     }
   }
   .btn{
     margin-top: vw(35);
+  }
+  .ansver-btn{
+    margin-top: vw(100);
   }
   .next-vopros{
     display: none;
@@ -76,6 +82,7 @@ $resolution: 900;
   #slider{
     margin-top: vw(50);
     margin-bottom: vw(50);
+    opacity: 1 !important;
   }
 
 
@@ -94,5 +101,17 @@ $resolution: 900;
     border: none;
     top: vw(-46);
     margin-left: vw(-46);
+    cursor: pointer;
+  }
+  .custom-handle-2{
+    width: vw(100);
+    height: vw(100);
+    background-size: 100% 100%;
+    border: none;
+    top: vw(-46);
+    margin-left: vw(-46);
+    cursor: pointer;
+    display: none;
+    background: url("../img/slider-fail.png") center center no-repeat;
   }
 }
