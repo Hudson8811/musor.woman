@@ -144,12 +144,29 @@ $(function() {
         if (cur2 < test2Count) {
             $('#test2 .next-vopros').css('display','flex')
         }
-        if ( $( "#slider" ).slider("value") >= correct*0.85  && $( "#slider" ).slider("value")  <= correct*1.15 ){
+
+        var value = $( "#slider" ).slider("value");
+
+        if ( value >= correct*0.85  && value  <= correct*1.15 ){
             $('#test2 .ansver-text').html(yes);
             $('#test2 .ansver-text').css('left',$("#custom-handle")[0].style.left);
 
         } else {
             $('#test2 .ansver-text').html(no);
+
+            $( "#slider" ).slider( "value", correct );
+
+            var handle = $( "#custom-handle" );
+            var handle2 = $( "#custom-handle-2" );
+            var left = handle[0].style.left;
+            var scale = 0.3 + parseInt(left)/100;
+            handle2.css('transform','scale('+scale+')');
+            handle2.css('left',left);
+
+            $( "#slider" ).slider( "value", value );
+
+            $('#test2 .ansver-text').css('left',left);
+            $('#custom-handle-2').show();
         }
         $('#test2 .ansver-text').show();
     });

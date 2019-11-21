@@ -103,7 +103,7 @@ $resolution: 900;
     margin-left: vw(-46);
     cursor: pointer;
   }
-  .custom-handle-2{
+  #custom-handle-2{
     width: vw(100);
     height: vw(100);
     background-size: 100% 100%;
@@ -111,6 +111,7 @@ $resolution: 900;
     top: vw(-46);
     margin-left: vw(-46);
     cursor: pointer;
+    position: absolute;
     display: none;
     background: url("../img/slider-fail.png") center center no-repeat;
   }
