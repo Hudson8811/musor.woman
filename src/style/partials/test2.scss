@@ -5,6 +5,7 @@ $resolution: 900;
   height: vw(500);
   box-sizing: border-box;
   padding: vw(35) vw(45) 0;
+  overflow: hidden;
   .btn{
     width: vw(323);
     height: vw(64);
@@ -64,5 +65,34 @@ $resolution: 900;
       line-height: vw(26);
       color: #000000;
     }
+  }
+  .btn{
+    margin-top: vw(35);
+  }
+  .next-vopros{
+    display: none;
+  }
+
+  #slider{
+    margin-top: vw(50);
+    margin-bottom: vw(50);
+  }
+
+
+  .ui-widget.ui-widget-content{
+    border: none;
+    height: vw(11);
+    background: url("../img/line.png") center center no-repeat;
+    background-size: cover;
+    border-radius: vw(10);
+  }
+  .ui-slider-handle{
+    width: vw(100);
+    height: vw(100);
+    background: url("../img/slider.png") center center no-repeat;
+    background-size: 100% 100%;
+    border: none;
+    top: vw(-46);
+    margin-left: vw(-46);
   }
 }
