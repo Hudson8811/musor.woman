@@ -6,6 +6,14 @@ $(function() {
 
         cur3 = 1;
 
+        var i;
+        var dots = '';
+        for (i = 0; i < test1Count; i++) {
+            dots += '<div class="dot"></div>';
+        }
+        $('#test3 .count-dots').html(dots);
+        $('#test3 .count-dots .dot').eq(cur3-1).addClass('active');
+
         $('#test3 .vopros-block .vopros img').attr('src','img/'+test3[0].image+'.png');
         $('#test3 .vopros-block .vopros .label').html(test3[0].text);
         type = test3[0].type;
@@ -49,6 +57,7 @@ $(function() {
         $('#test3 .vopros').css('display','flex');
         $('#test3 .ansver .yes,#test3 .ansver .no').removeClass('active');
         $('#test3 .bin').removeClass('yes no');
+        $('#test3 .count-dots .dot').eq(cur3-1).addClass('active').siblings('.dot').removeClass('active');
     });
 
 

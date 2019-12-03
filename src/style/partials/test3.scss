@@ -2,14 +2,14 @@ $resolution: 1466;
 
 #test3{
   width: vw(1466);
-  height: vw(847);
+  height: vw(680);
   box-sizing: border-box;
   padding: vw(22) vw(22) vw(29);
   overflow: hidden;
   .btn{
     width: vw(323);
     height: vw(64);
-    font-size: vw(20);
+    font-size: vw(17);
   }
   .vopros-block{
     display: flex;
@@ -23,8 +23,8 @@ $resolution: 1466;
     align-items: center;
     justify-content: center;
     .img{
-      width: vw(120);
-      height: vw(297);
+      width: vw(200);
+      height: vw(250);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -38,19 +38,10 @@ $resolution: 1466;
       font-family: $font1;
       font-style: normal;
       font-weight: bold;
-      font-size: vw(20);
+      font-size: vw(35);
       text-align: center;
-      color: #000000;
+      color: #FFFFFF;
       margin-top: vw(25);
-    }
-    .info{
-      font-family: $font1;
-      font-style: normal;
-      font-weight: normal;
-      font-size: vw(20);
-      text-align: center;
-      color: #000000;
-      margin-top: vw(8);
     }
   }
 
@@ -66,7 +57,7 @@ $resolution: 1466;
       font-weight: bold;
       font-size: vw(20);
       text-align: center;
-      color: #000000;
+      color: #FFFFFF;
       >div{
         display: none;
         &.active{
@@ -80,7 +71,7 @@ $resolution: 1466;
       font-weight: normal;
       font-size: vw(20);
       text-align: center;
-      color: #000000;
+      color: #FFFFFF;
       margin-top: vw(8);
     }
     .next-vopros{
@@ -91,19 +82,18 @@ $resolution: 1466;
   .bins{
     display: flex;
     justify-content: space-between;
+    width: 68%;
+    margin: 0 auto;
     .bin{
-      width: vw(331);
-      height: vw(331);
+      width: vw(200);
+      height: vw(200);
       background-size: 100% 100%;
       background-repeat: no-repeat;
       background-position: center center;
       display: flex;
       align-items: center;
       justify-content: center;
-      &#bin-1{background-image: url("../img/plastic_bin.png")}
-      &#bin-2{background-image: url("../img/paper_bin.png")}
-      &#bin-3{background-image: url("../img/glass_bin.png")}
-      &#bin-4{background-image: url("../img/waste_bin.png")}
+
       .circle{
         width: vw(172);
         height: vw(172);
@@ -121,13 +111,21 @@ $resolution: 1466;
           margin-bottom: vw(15);
         }
         .label{
-          font-family: $font2;
+          font-family: $font1;
           font-style: normal;
           font-weight: bold;
-          font-size: vw(20);
-          line-height: vw(27);
+          font-size: vw(17);
+          line-height: vw(23);
           text-align: center;
           color: #000000;
+        }
+      }
+      &#bin-4{
+        img{
+          width: vw(50);
+          height: vw(50);
+          margin-bottom: vw(5);
+          margin-top: vw(-10);
         }
       }
       &.ui-droppable-hover{
@@ -141,4 +139,16 @@ $resolution: 1466;
       }
     }
   }
+
+  .count-dots{
+    margin-top: vw(60);
+    .dot{
+      width: vw(14);
+      height: vw(14);
+      +.dot{
+        margin-left: vw(30);
+      }
+    }
+  }
 }
+

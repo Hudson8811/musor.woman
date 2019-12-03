@@ -2,46 +2,23 @@ $resolution: 827;
 
 #test1{
   width: vw(827);
-  height: vw(820);
+  height: vw(670);
   box-sizing: border-box;
   padding: vw(45) 0 0;
   .btn{
     width: vw(323);
-    height: vw(64);
-    font-size: vw(20);
+    height: vw(55);
+    font-size: vw(16);
   }
   .lie,.true{
-    border: none;
-    margin: 0;
-    padding: 0;
     font-family: $font2;
     font-style: normal;
     font-weight: bold;
-    font-size: vw(30);
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: vw(16);
+    width: vw(190);
+    height: vw(55);
   }
-  button.lie,button.true{
-    transition: 0.3s ease;
-    cursor: pointer;
-    &:hover{
-      background-size: 80% 80%;
-    }
-  }
-  .lie{
-    width: vw(352.87);
-    height: vw(212.14);
-    background: url("../img/lie.png") center center no-repeat;
-    background-size: 100% 100%;
-  }
-  .true{
-    width: vw(288.04);
-    height: vw(211.18);
-    background: url("../img/true.png") center center no-repeat;
-    background-size: 100% 100%;
-  }
+
   .vopros-block{
     width: 100%;
     box-sizing: border-box;
@@ -54,10 +31,10 @@ $resolution: 827;
       font-size: vw(20);
       line-height: vw(27);
       text-align: center;
-      color: #000000;
+      color: #FFFFFF;
     }
     .btns-row{
-      margin-top: vw(35);
+      margin-top: vw(70);
       display: flex;
       justify-content: space-between;
     }
@@ -85,7 +62,7 @@ $resolution: 827;
       font-weight: normal;
       font-size: 20px;
       line-height: 38px;
-      color: #000000;
+      color: #FFFFFF;
       span{
         font-style: normal;
         font-weight: bold;
@@ -96,4 +73,14 @@ $resolution: 827;
     }
   }
 
+  .count-dots{
+    .dot{
+      width: vw(16);
+      height: vw(16);
+      +.dot{
+        margin-left: vw(33);
+      }
+    }
+  }
 }
+

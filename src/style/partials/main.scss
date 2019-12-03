@@ -20,17 +20,18 @@ body{
 	align-items: center;
 	justify-content: center;
 	.dot{
-		width: 7px;
-		height: 7px;
-		border: 2px solid rgba(0, 0, 0, 0.5);
+		width: 16px;
+		height: 16px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
 		box-sizing: border-box;
 		display: block;
 		border-radius: 100%;
+		background: transparent;
 		+.dot{
 			margin-left: 33px;
 		}
 		&.active{
-			background: #000000;
+			background: #FFFFFF;
 		}
 	}
 }
@@ -50,5 +51,11 @@ body{
 	margin: 0 auto;
 	&:hover{
 		background: #9e001f;
+	}
+	&-green{
+		background: rgb(0,155,2);
+		&:hover{
+			background: rgb(0, 108, 2);
+		}
 	}
 }
