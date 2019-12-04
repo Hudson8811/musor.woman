@@ -84,7 +84,11 @@ $resolution: 421;
           }
         }
       }
-
+      &:disabled{
+        + span{
+          opacity: 0.5;
+        }
+      }
     }
   }
   textarea{
@@ -102,6 +106,9 @@ $resolution: 421;
       font-family: $font1;
       font-style: italic;
       text-indent: vw(22);
+    }
+    &:disabled{
+      opacity: 0.5;
     }
   }
 }
