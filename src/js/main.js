@@ -12,3 +12,4 @@
 //= partials/test1.js
 //= partials/test2.js
 //= partials/test3.js
+//= partials/opros.js
